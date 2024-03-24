@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Lista</title>
+</head>
+<body>
+    
+    <div id="search-bar">
+        <input type="text" id="search-input" placeholder="Buscar usuario">
+        <button onclick="searchUser()">Buscar</button>
+        
+    </div>
+    <div id="grid-container"></div>
+
+    <script src="lista.js"></script>
+    <script src="buscarUsuario.js"></script>
+    <script src="manejoUsuario.js"></script>
+    <script>
+        // Llama a la función loadUserData al cargar el DOM
+        document.addEventListener('DOMContentLoaded', function() {
+            loadUserData();
+        });
+    </script>
+</body>
+</html>
